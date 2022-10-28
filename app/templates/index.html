@@ -1,0 +1,17 @@
+{% extends 'base.html' %} {%block index_content%}
+<h2>This is a content of index page</h2>
+<ul>
+  {% for item in list %}
+  <li>{{item}}</li>
+
+  {% endfor %} {% for item in students %} {% endfor %}
+</ul>
+<ul>
+  {% for item in students %}
+  <li>
+    <p>Name: {{item.name}}</p>
+    <span>Java: {{item.java}}; PHP: {{item.php}}; C: {{item.c}}</span>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

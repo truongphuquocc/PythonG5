@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Welcom to Flask</title>
+    {% endif %}
+  </head>
+  <body>
+    <h1>My First Flask App</h1>
+    {% if user.name %}
+    <h2>Hello {{user.name}}</h2>
+    {% else %}
+    <h2>Welcom to Flask</h2>
+    {% endif %} {%block index_content%} {% endblock %}
+  </body>
+</html>
